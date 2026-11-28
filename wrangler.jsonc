@@ -4,6 +4,10 @@
 {
   "name": "figline-pages",
   "compatibility_date": "2026-11-01",
+  // workers.dev の本番 URL と PR プレビュー URL を有効にする
+  "workers_dev": true,
+  "preview_urls": true,
+  "previews": {},
   "assets": {
     "directory": "./",
     // GitHub Pages と同じ URL 挙動にする: /privacy/ は privacy/index.html を返す
