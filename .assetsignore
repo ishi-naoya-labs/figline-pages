@@ -1,0 +1,9 @@
+# 配信しないファイル（assets.directory が "./" のため）
+.git
+.github
+.assetsignore
+wrangler.jsonc
+CNAME
+README.md
+node_modules
+.wrangler

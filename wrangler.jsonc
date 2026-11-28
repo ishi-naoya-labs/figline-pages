@@ -1,0 +1,12 @@
+// Cloudflare Workers Builds で公開するための設定（静的サイト）。
+// main への push で Cloudflare が `npx wrangler deploy`、PR ブランチでは `npx wrangler versions upload`（プレビュー URL）を実行する。秘密は要らない。
+// 注意: カスタムドメイン figline.app は今も GitHub Pages（CNAME ファイル）で配信中。DNS の切り替えはこの PR に含まれない。
+{
+  "name": "figline-pages",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./",
+    // GitHub Pages と同じ URL 挙動にする: /privacy/ は privacy/index.html を返す
+    "html_handling": "auto-trailing-slash"
+  }
+}
